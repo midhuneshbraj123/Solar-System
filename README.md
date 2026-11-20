@@ -51,3 +51,5 @@ Animations or styles not loading: Verify that index.html, styles.css, and script
 
 License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+<img width="1917" height="967" alt="banner" src="https://github.com/user-attachments/assets/dfb4141b-022b-493d-a71f-bb2d731b9ead" />
