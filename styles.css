@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    background-color: #030308;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.controls {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #6366f1;
+}
+
+.solar-system {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #ffaa00;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #ff5500, 0 0 60px #ffaa00;
+}
+
+.orbit {
+    position: absolute;
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.planet {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.mercury-orbit {
+    width: 120px;
+    height: 120px;
+    animation: spin 3s linear infinite;
+}
+.mercury {
+    width: 8px;
+    height: 8px;
+    background-color: #a6a6a6;
+}
+
+.venus-orbit {
+    width: 180px;
+    height: 180px;
+    animation: spin 5s linear infinite;
+}
+.venus {
+    width: 12px;
+    height: 12px;
+    background-color: #e3bb76;
+}
+
+.earth-orbit {
+    width: 250px;
+    height: 250px;
+    animation: spin 8s linear infinite;
+}
+.earth {
+    width: 14px;
+    height: 14px;
+    background-color: #3498db;
+}
+
+.mars-orbit {
+    width: 320px;
+    height: 320px;
+    animation: spin 12s linear infinite;
+}
+.mars {
+    width: 10px;
+    height: 10px;
+    background-color: #e74c3c;
+}
+
+.jupiter-orbit {
+    width: 440px;
+    height: 440px;
+    animation: spin 20s linear infinite;
+}
+.jupiter {
+    width: 26px;
+    height: 26px;
+    background-color: #d35400;
+}
+
+.saturn-orbit {
+    width: 560px;
+    height: 560px;
+    animation: spin 28s linear infinite;
+}
+.saturn {
+    width: 22px;
+    height: 22px;
+    background-color: #f1c40f;
+}
+
+.uranus-orbit {
+    width: 660px;
+    height: 660px;
+    animation: spin 38s linear infinite;
+}
+.uranus {
+    width: 16px;
+    height: 16px;
+    background-color: #1abc9c;
+}
+
+.neptune-orbit {
+    width: 760px;
+    height: 760px;
+    animation: spin 48s linear infinite;
+}
+.neptune {
+    width: 16px;
+    height: 16px;
+    background-color: #2980b9;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.paused {
+    animation-play-state: paused !important;
+}
